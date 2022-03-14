@@ -1,0 +1,129 @@
+.main-aside {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1170px;
+    justify-content: flex-end;
+    gap: 50px;
+
+}
+
+.main__sections {
+    max-width: 700px;
+}
+
+
+
+.aside {
+    max-width: 272px;
+    overflow: auto;
+    height: 100%; // experiment with this value, try changing to 110vh
+    overflow: auto;
+    min-height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1%;
+
+    // .aside__about
+
+    &__about {
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        margin-bottom: 70px;
+    }
+
+    // .aside__title
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    // .aside__text
+
+    &__text {
+        line-height: 1.5em;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    // .aside__social
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+
+    // .aside__social-link
+
+    &__social-link {
+        color: $colorGold;
+    }
+
+    // .aside__posts
+    &__posts-title {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    &__posts {
+        margin-bottom: 30px;
+        padding-left: 20px;
+    }
+
+    // .aside__posts-list
+
+
+
+    // .aside__post-item
+
+    &__post-item {
+        list-style: disc;
+
+        span {
+            margin-bottom: 10px;
+            display: block;
+        }
+    }
+
+    // .aside__category
+
+
+    &__banner {
+        position: relative;
+        font-family: 'Ubuntu',sans-serif;
+    }
+
+    &__banner-owerlay-title {
+        font-size: 48px;
+        
+        margin-bottom: 16px;
+    }
+
+    &__banner-owerlay-subtitle {
+        font-size: 14px;
+        text-transform: uppercase;
+
+    }
+
+    &__banner-owerlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+
+        color: #fff;
+    }
+}

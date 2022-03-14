@@ -1,0 +1,136 @@
+@media screen and (max-width: 992px) {
+    .comment__row {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .also-like__wrapper {
+        justify-content:center;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__menu {
+        gap: 30px;
+    }
+
+    .header {
+        padding-top: 20px;
+    }
+
+    .main-slider {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .photodiary {
+        padding-top: 20px;
+       
+    }
+
+    .comment__main-category,
+    .comment__category {
+        margin-bottom: 15px;
+    }
+
+    .comment {
+        padding-bottom: 50px;
+    }
+
+    .sing-up {
+        margin-bottom: 50px;
+    }
+
+    .comment__load-more {
+        margin: 30px auto 0;
+    }
+
+    .aside {
+        display: none;
+    }
+
+    .main-aside {
+        justify-content:center;
+        
+    }
+}
+
+@media screen and (max-width: 568px) {
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__mobile-menu {
+        display: block;
+
+    }
+
+    .mobile-menu__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .mobile-menu__close {
+        color: #fff;
+        z-index: 22;
+        font-size: 30px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        
+    }
+
+    .mobile-menu {
+        padding-top: 50px;
+        transform: translateX(-100%);
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 20;
+        width: 46vh;
+
+        transition: all 0.4s ease-in-out;
+
+        text-transform: uppercase;
+        font-size: 24px;
+        color: #fff;
+
+
+        &.active {
+            display: block;
+            animation: openMenu 1s forwards
+        }
+    }
+
+
+    .also-like {
+        padding:30px 0;
+    }
+
+
+    .footer__row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .mobile-menu {
+        width: 100%;
+    }
+}
+@keyframes openMenu {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}

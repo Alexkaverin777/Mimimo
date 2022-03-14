@@ -1,0 +1,22 @@
+.also-like {
+    background: $colorBgAlsoLike;
+    padding: 70px 0;
+
+
+    &__category{
+        margin-bottom: 20px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+
+        img {
+            margin-bottom: 20px;
+        }
+
+    }
+}

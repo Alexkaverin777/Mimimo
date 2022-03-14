@@ -1,0 +1,99 @@
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-weight: 400;
+    color: $colorText;
+    font-size: 16px;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+picture {
+    display: block;
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+b {
+    font-weight: 600;
+}
+button, input, select, textarea {
+    outline: none;
+    appearance: none;
+}
+
+.header {
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto;
+}
+
+.main {
+    /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 1 0 auto;
+}
+
+.footer {
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+.container-full {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.mobile-menu {
+    display: none;
+}
+h1 {
+    @include adaptiv-font(30, 24);
+}
+
+h2 {
+    @include adaptiv-font(30, 24);
+}
+
+.category {
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    display: block;
+    color: $colorGold;
+    font-size: 12px;
+}
+
+.box-context {
+
+
+    &__category {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        line-height: 1.4em;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
